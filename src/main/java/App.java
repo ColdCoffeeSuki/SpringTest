@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
         AccountService accountService = ctx.getBean(AccountService.class);
-        Account account = accountService.selectById(2);
+        Account account = accountService.selectById(3);
         System.out.println(account);
     }
 }
